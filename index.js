@@ -76,7 +76,7 @@ app.get("/players/:playerId", async (req, res) => {
     
     const id  = req.params.playerId ;
     const player = await Player.findById(id);
-    res.json(player);
+    res.json(player);;
     
     
 });
